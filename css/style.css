@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 navbar-brand{
     font-family: 'Rajdhani', sans-serif;
 }
@@ -115,6 +119,13 @@ navbar-brand{
     font-size: 3rem;
 }
 
+.cardCars {
+    margin-left: auto;
+    margin-right: 4rem;
+    width: 300px;
+    object-fit: cover;
+}
+
 /* Colores individuales #cedc00*/
 #astonmartin {
     background-color: #00352f;
@@ -136,12 +147,14 @@ navbar-brand{
     color: white;
 }
 
-.tarjeta button {
-    margin-left: auto; /* empuja el botón a la derecha */
-    margin-right: 2rem; /* espacio desde el borde derecho */
-    font-size: 1.2rem;
-    padding: 0.6rem 1.2rem;
+.tarjeta img.cardCars {
+    margin-left: auto;
+    margin-right: 4rem;
+    width: 500px;
+    height: auto; /* Añádelo para que no lo herede de otra regla */
+    object-fit: cover;
 }
+
 
 
 footer {
