@@ -5,76 +5,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RacingPoint MX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand shadow-sm">
+        <div class=" container">
             <a class="navbar-brand" href="#">
-                <h1>RacingPoint MX</h1>
+                <h1 href="index.html">RacingPoint MX</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="astonMartin.html">Aston Martin</a>
-                    <a class="nav-link" href="Ferrari.html">Ferrari</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#about-us">Sobre nosotros</a>
+                    <a class="nav-link" href="astonMartin.html">Aston Martin</a>
+                    <a class="nav-link" href="ferrari.html">Ferrari</a>
                     <a class="nav-link" href="mclaren.html">McLaren</a>
                     <a class="nav-link" href="mercedes.html">Mercedes</a>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Hero Section - Imagen de fondo -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>GP CANADÁ</h1>
+            <p>Consigue la merch oficial del GP de Canadá</p>
+            <a href="#" class="btn btn-light">COMPRAR</a>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid" id="about-us">
+            <div class="row vh-100 align-items-center">
 
-    <h2></h2>
-    <!--Banner o imagen -->
-    <img src="formula1-race-start-action-auqmv172j5fmj6xm.jpg" alt="">
-    <p>Lleva tu pasión por la F1 donde vayas.
-        Sudaderas, llaveros y réplicas de casco de tus ídolos.
-        Novedades semanales de tu escudería favorita.
-        Viste como un auténtico fan del automovilismo.</p>
-    <div class="Escuderias">
-        <div id="astonmartin">
-            <h3>Aston Martin</h3>
-        </div>
-        <div id="ferrari">
-            <h3>Ferrari</h3>
-        </div>
-        <div id="mclaren">
-            <h3>McLaren</h3>
-        </div>
-        <div id="mercedes">
-            <h3>Mercedes</h3>
-        </div>
-    </div>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                <div class="col-md-7 text-left">
+                    <h1>Lleva tu pasión por la F1</h1>
+                    <h2>Viste como un auténtico fan</h2>
+                    <a href="#" class="btn btn-light">COMPRA AHORA</a>
+                </div>
+
+                <div class="col-md-5 text-right">
+                    <p class="px-4">
+                        En RacingPoint MX no solo vendemos artículos... encendemos la pasión por la Fórmula 1.<br>
+                        Somos la parada obligatoria para los verdaderos fans del automovilismo.<br>
+                        Descubre sudaderas, llaveros, réplicas de cascos y más. <br>
+                        ¡Porque la pasión por la F1 no se queda en la pista!
+                    </p>
+                </div>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a></li>
-            </ul>
-        </footer>
+        </div>
+    </section>
+    <!--Banner o imagen -->
+    <br>
+    <div class="container-fluid escuderiasContenedor">
+        <div class="tarjeta" id="astonmartin">
+            <img src="/images/Escudos/astonlogo-removebg-preview.png" alt="Aston Martin">
+            <h3>Aston Martin</h3>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Descubre más
+            </button>
+        </div>
+        <div class="tarjeta" id="ferrari">
+            <img src="/images/Escudos/ferarriescudo-removebg-preview.png" alt="Ferrari">
+            <h3>Ferrari</h3>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Descubre más
+            </button>
+        </div>
+        <div class="tarjeta" id="mclaren">
+            <img src="/images/Escudos/mclarenescudo-removebg-preview.png" alt="McLaren">
+            <h3>McLaren</h3>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Descubre más
+            </button>
+        </div>
+        <div class="tarjeta" id="mercedes">
+            <img src="/images/Escudos/mercedes_logo-removebg-preview.png" alt="Mercedes">
+            <h3>Mercedes</h3>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Descubre más
+            </button>
+        </div>
     </div>
+    <section>
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/merchandising/ropaFerrari/RopaFerrari2.png" class="card-img-top"
+                            alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gorra</h5>
+                            <p class="card-text">Gorra con guirnaldas</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$19.99</span>
+                                <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/merchandising/redbullPolo.png" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Polo</h5>
+                            <p class="card-text">Polo Red Bull Racing</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$50.99</span>
+                                <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/merchandising/AstonPolo.png" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Playera</h5>
+                            <p class="card-text">Playera Aston Martin Racing</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$50.99</span>
+                                <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/merchandising/mclarenPolo.png" class=" card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Polo</h5>
+                            <p class="card-text">Polo McLaren</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$50.99</span>
+                                <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="images/AMR24.jpg"
+                    class="img-fluid" style="box-shadow: 0 0 15px #eee;" alt="">
+            </div>
+            <div class="col-md-6 pt-3">
+                <small class="text-uppercase" style="color: #222;">Por que comprar con nosotros</small>
+                <h1 class="h2 mb-4" style="font-weight: 600;">Somos fanaticos
+                    <span style="color: red;" class="font-weight-bold">como tú¡</span>
+                </h1>
+                <p class="text-secondary" style="line-height: 2;"> Entendemos esa emoción que te eriza la piel cuando escuchas un motor encender. <br>
+        Nosotros también contamos los días para la próxima carrera, también gritamos con cada adelantamiento
+        y nos emocionamos al ver a nuestro piloto favorito en el podio. <br>
+        Por eso, cada producto que encuentras aquí está pensado para verdaderos fanáticos, como tú y como nosotros. 
+        Porque esto no es solo una tienda, es un lugar donde vive la pasión por la F1.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Sobre Nosotros</h5>
+                    <p>No vendemos solo productos, compartimos tu pasión. <br>
+        Sabemos lo que se siente vibrar con cada carrera, vivir la emoción de tu escudería y querer mostrarlo al mundo.
+        Por eso seleccionamos cada artículo con la misma emoción que tú sientes cada domingo.
+        Aquí no eres solo un cliente: eres parte de la familia RacingPoint MX.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="astonMartin.html" class="text-decoration-none text-white">Aston Martin</a></li>
+                        <li><a href="ferrari.html" class="text-decoration-none text-white">Ferrari</a></li>
+                        <li><a href="mclaren.html" class="text-decoration-none text-white">McLaren</a></li>
+                        <li><a href="mercedes.html" class="text-decoration-none text-white">Mercedes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="#" class="text-white">Facebook<i
+                                    class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white">X<i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Instagram<i
+                                    class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 RacingPoint MX. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
