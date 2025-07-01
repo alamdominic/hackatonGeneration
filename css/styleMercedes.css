@@ -1,0 +1,73 @@
+/* Mercedes-specific styles */
+.navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    padding-left: 2em;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#img-auto-w15 {
+    object-position: center;
+}
+
+.brand-color {
+    color: #00d2be; /* Mercedes cyan */
+}
+
+.bg-brand {
+    background-color: #0f0f0f; /* Más cercano a la estética Mercedes-AMG */
+}
+
+.her-banner {
+    background-image: url('../images/Mercedes/logo.png'); /* Imagen de Mercedes */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#textw15 {
+    text-align: right;
+    padding: 1rem;
+    z-index: 1;
+}
+
+#w15cuadrado {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w15-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.social-icons a {
+    font-size: 1.25rem;
+}
