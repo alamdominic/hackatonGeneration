@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 navbar-brand{
     font-family: 'Rajdhani', sans-serif;
     padding-left: 2em ;
