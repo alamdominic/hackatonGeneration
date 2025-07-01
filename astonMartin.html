@@ -1,11 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aston Martin</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleAstonMartin.css" />
 </head>
+
 <body>
-    
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brand shadow-sm" >
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 href="index.html">RacingPoint MX</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="#about-us">Sobre nosotros</a>
+                        <a class="nav-link" href="astonMartin.html">Aston Martin</a>
+                        <a class="nav-link" href="ferrari.html">Ferrari</a>
+                        <a class="nav-link" href="mclaren.html">McLaren</a>
+                        <a class="nav-link" href="mercedes.html">Mercedes</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carrusel principal (auto, pilotos, merchandising) -->
+        <div id="carouselAstonMartin" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselAstonMartin" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselAstonMartin" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselAstonMartin" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Foto de auto en carrusell  -->
+                    <img src="https://hips.hearstapps.com/vidthumb/images/aston-martin-amr24-02-65c9e533eeae3.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" class="d-block w-100" alt="Aston Martin AMR24" height="500px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Aston Martin AMR24</h1>
+                        <p>El nuevo monoplaza británico para la temporada 2025</p>
+                        <a class="btn btn-primary" href="#">Conoce el auto</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Foto pilotos de carrusel  -->
+                    <img src="https://assets.astonmartinf1.com/public/cms/5iK4tAThEF0iHNm3AnMpPX/149d6fdded5ea4588005e0d9d70d4d07/Driver_squad_2800x1600_2.jpg?&h=849&w=1440&fm=jpg&fit=thumb"
+                        class="d-block w-100" alt="Pilotos Aston Martin" height="500px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>El talento británico</h1>
+                        <p>Pilotos oficiales Aston Martin F1 Team</p>
+                        <a class="btn btn-primary" href="#">Ver pilotos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Foto de pilotos mostrando ropa en carrusel l  -->
+                    <img src="https://img2.rtve.es/n/16456053" class="d-block w-100" alt="Merchandising Aston Martin" height="500px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Vístete como ellos</h1>
+                        <p>Nuestra mercancía oficial Aston Martin F1</p>
+                        <a class="btn btn-primary" href="#">Compra aquí</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAstonMartin" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAstonMartin" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Hero Banner con imagen de letras Aston Martin (busca una imagen apropiada si deseas) -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <!-- Puedes agregar aquí un slogan o dejarlo vacío -->
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col" id="textamr24">
+                        <h2>AMR24</h2>
+                        <p><strong>Aston Martin AMR24</strong> es el monoplaza británico para la temporada 2025 de Fórmula 1. Con una aerodinámica refinada y un potente motor Mercedes-AMG F1 M14 E Performance, busca competir al más alto nivel con <strong>Fernando Alonso</strong> y <strong>Lance Stroll</strong> como pilotos oficiales. El chasis de fibra de carbono, la suspensión push-rod y un avanzado sistema híbrido aseguran rendimiento y fiabilidad. Su diseño destaca por el clásico color verde British Racing Green y detalles lime essence.</p>
+                    </div>
+                    <div class="col" id="amr24box">
+                        <!-- Foto auto descripcion  -->
+                        <img src="images/AMR24.jpg" alt="Aston Martin AMR24" class="amr24-image" />
+                        
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col" id="amr24box">
+                        <!-- Foto pilotos descripcion  -->
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/sebastian-vettel-of-germany-and-aston-martin-f1-team-and-news-photo-1631782315.jpg?crop=1.00xw:0.752xh;0,0.0209xh&resize=1024:*" alt="Pilotos Aston Martin" class="amr24-image" />
+                    
+                    </div>
+                    <div class="col" id="textamr24">
+                        <h2>Pilotos oficiales</h2>
+                        <p>Para la temporada 2025 de Fórmula 1, Aston Martin confía en el bicampeón <strong>Fernando Alonso</strong> y el talentoso <strong>Lance Stroll</strong>. Ambos aportan experiencia, velocidad y determinación, buscando llevar a la escudería británica a los primeros puestos del campeonato mundial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-5">
+                <h2 class="text-center mb-4">Productos Oficiales Aston Martin</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- Producto GORRA VERDE  -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/AstonMartin/gorra.png"
+                                class="card-img-top" alt="Gorra Fernando Alonso">
+                            <div class="card-body">
+                                <h5 class="card-title">Gorra Fernando Alonso</h5>
+                                <p class="card-text">Gorra Fernando Alonso Aston Martin F1 Team 2025</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$ 69.28</span>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto  SUDADERA NEGRA-->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/AstonMartin/sudadera.png"
+                                class="card-img-top" alt="Sudadera Edicion Especial">
+                            <div class="card-body">
+                                <h5 class="card-title">Sudadera Edicion Especial</h5>
+                                <p class="card-text">Sudadera Aston Martin F1™ Team x The Rolling Stones 2025 Edición Especial</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$ 309.31</span>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto CAMISA VERDE  -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/AstonMartin/camisa.png"
+                                class="card-img-top" alt="Camiseta Oficial">
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Oficial</h5>
+                                <p class="card-text">Camiseta Oficial Aston Martin F1™ 2025 British GP - Edición Especial</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$ 69.28</span>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add Cartr</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto GORRO INVERNAL -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/AstonMartin/gorrito.png"
+                                class="card-img-top" alt="Gorro de Invierno">
+                            <div class="card-body">
+                                <h5 class="card-title">Gorro de Invierno</h5>
+                                <p class="card-text">Gorro de Invierno Aston Martin F1 Team 2025</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$ 74.61</span>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i> Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <!-- Cambia la imagen por una de dos autos Aston Martin si tienes una local, si no, busca una url -->
+                    <img src="https://admin.tvpacifico.mx/images/noticias/304432-200526.webp"
+                        class="img-fluid" style="box-shadow: 0 0 15px #eee;" alt="">
+                </div>
+                <div class="col-md-6 pt-3">
+                    <small class="text-uppercase" style="color: #222;">Por qué comprar con nosotros</small>
+                    <h1 class="h2 mb-4" style="font-weight: 600;">Somos fanáticos
+                        <span style="color: #22967A;" class="font-weight-bold">como tú ¡</span>
+                    </h1>
+                    <p class="text-secondary" style="line-height: 2;">
+                        Compartimos la pasión por la Fórmula 1 y la escudería Aston Martin. Elegimos los mejores productos para que vivas la experiencia al máximo, con calidad y autenticidad. Aquí no solo compras, te unes a una comunidad de fans que vibra con cada carrera.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5>Sobre Nosotros</h5>
+                        <p>En RacingPoint MX encendemos tu pasión por la F1.<br> Artículos únicos para verdaderos fans del automovilismo.<br> Sudaderas, gorras, cascos y más.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                            <li><a href="astonMartin.html" class="text-decoration-none text-white">Aston Martin</a></li>
+                            <li><a href="ferrari.html" class="text-decoration-none text-white">Ferrari</a></li>
+                            <li><a href="mclaren.html" class="text-decoration-none text-white">McLaren</a></li>
+                            <li><a href="mercedes.html" class="text-decoration-none text-white">Mercedes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Síguenos</h5>
+                        <ul class="list-inline social-icons">
+                            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2025 RacingPoint MX.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>
